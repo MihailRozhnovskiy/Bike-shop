@@ -1,3 +1,121 @@
-h1 {
-  color: red;
+@import "fonts.scss";
+
+%buttons {
+  display: inline-block;
+  width: 240px;
+  padding: 20px;
+  font: inherit;
+  vertical-align: top;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #baa480;
+  text-transform: uppercase;
+  text-decoration: none;
+  word-wrap: break-word;
+  border: 1px solid #baa480;
+  box-sizing: border-box;
+}
+
+%sprite {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 20px;
+  //color: #9b8869;
+  border: 1px solid #9b8869;
+  //background: sprite;
+}
+
+body {
+  min-width: 1024px;
+  margin: 0;
+  padding: 0;
+  font-family: "HaginCapsMedium", sans-serif;
+  color: #817155;
+  background-color: #e9e1d5;
+}
+
+
+.header {
+  min-height: 768px;
+  padding: 37px 41px;
+  background: url("../img/header_image.png") no-repeat center;
+  background-size: cover;
+  .header__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .header__logo img {
+      width: 184px;
+      height: 30px;
+      }
+    .main-nav {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      li {
+        margin-right: 20px;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+      a {
+        color: #9b8869;
+        text-decoration: none;
+      }
+    }
+    .user-nav {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0;
+      .user-btn {
+        @extend %sprite;
+      }
+    }
+  }
+  .header__promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    margin-left: 600px;
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 100px;
+      line-height: 100px;
+      letter-spacing: 0.04em;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #baa480;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 65px;
+      line-height: 90px;
+      letter-spacing: 0.04em;
+      font-weight: normal;
+      color: #baa480;
+    }
+    .promo-btn {
+      @extend %buttons;
+      margin-top: 60px;
+    }
+  }
+  .header__social {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 175px; // не понимаю почему не работают свойства align-items, align-self
+    font-size: 0;
+    .social-btn {
+      @extend %sprite;
+    }
+  }
 }

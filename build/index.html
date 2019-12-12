@@ -4,10 +4,184 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Bike shop</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+<header class="header">
+    <div class="header__top">
+      <div class="header__logo">
+        <img src="img/logo.png" alt="Bikeshop Chopper" width="184" height="30">
+      </div>
+      <ul class="main-nav">
+        <li><a href="#">Велосипеды</a></li>
+        <li><a href="#">Аксессуары</a></li>
+        <li><a href="#">Запчасти</a></li>
+        <li><a href="#">Мастерская</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <ul class="user-nav">
+        <li><a class="user-btn user-btn-us" href="#">Пользователи</a></li>
+        <li><a class="user-btn user-btn-s" href="#">Поиск</a></li>
+        <li><a class="user-btn user-btn-b" href="#">Корзина</a></li>
+      </ul>
+    </div>
+    <div class="header__promo">
+      <h1>велосипеды</h1>
+      <p>с твоим характером</p>
+      <a class="promo-btn" href="#">В магазин</a>
+    </div>
+    <div class="header__social">
+      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-in" href="#">Инстаграм</a>
+    </div>
+</header>
+
+<div class="bikes">
+  <div class="bikes__text-block">
+    <h2>У нас более 200 моделей прогулочных велосипедов для настоящих мужчин</h2>
+    <p>Бесплатный выездной тест-драйв на все модели. Система рассрочки 0-0-5.
+      Для членов клуба бесплатно предоставляется выездной сервис, зимнее хранение и куча привелегий от партнеров.</p>
+  </div>
+  <div class="bikes__slider">
+    <div class="bike-slide">
+      <img src="img/bikes/bike_1.png" alt="bike" width="319" height="147">
+      <p class="bike-name">Micargi cyclone electric</p>
+      <p class="bike-description">26", 500W, 5 скоростей, сталь, США</p>
+      <p class="bike-price">154 000 &#8381;</p>
+    </div>
+    <div class="bike-slide">
+      <img src="img/bikes/bike_2.png" alt="bike" width="283" height="131">
+      <p class="bike-name">Neuzer chopper apocalypse</p>
+      <p class="bike-description">24", сталь Hi-Ten, Венгрия</p>
+      <p class="bike-price">75 000 &#8381;</p>
+    </div>
+    <div class="bike-slide">
+      <img src="img/bikes/bike_3.png" alt="bike" width="262" height="128">
+      <p class="bike-name">Schwinn stingray occ</p>
+      <p class="bike-description">20"+24", сталь, США</p>
+      <p class="bike-price">34 000 &#8381;</p>
+    </div>
+    <div class="bike-slide">
+      <img src="img/bikes/bike_4.png" alt="bike" width="266" height="199">
+      <p class="bike-name">Harley Davidson</p>
+      <p class="bike-description">20", сталь, Китай</p>
+      <p class="bike-price">23 000 &#8381;</p>
+    </div>
+    <div class="bike-slide">
+      <img src="img/bikes/bike_5.png" alt="bike" width="286" height="178">
+      <p class="bike-name">X-front snowmobile</p>
+      <p class="bike-description">24", сталь, Китай</p>
+      <p class="bike-price">42 000 &#8381;</p>
+    </div>
+    <div class="bikes__slider-button-next">&gt;</div>
+    <div class="bikes__slider-button-prev">&lt;</div>
+  </div>
+  <a class="bikes__btn" href="#">Все велосипеды</a>
+</div>
+
+<div class="service">
+  <div class="service__picture">
+    <img src="img/rectangle_4.png" alt="picture" width="467" height="389">
+  </div>
+  <div class="service__text-block">
+    <h2>Мастерская</h2>
+    <p>Наши мастера всегда готовы привести в чувство вашего коня, кастомизировать любую модель или просто помочь советом.
+      Возможен выезд по вашему адресу. Для велосипедов, купленных у нас, обслуживание предоставляется бесплатно.</p>
+  </div>
+  <a class="service__btn" href="#">Подробнее</a>
+</div>
+
+<div class="accessories">
+  <div class="accessories__text-block">
+    <h2>Запчасти и аксессуары</h2>
+    <p>Всегда большой выбор запчастей и аксессуаров для чоппер-байков.
+      Если вы чего-то не нашли в наличии, наши консультанты помогут заказать и доставить товар из любой точки мира.</p>
+  </div>
+  <div class="accessories__slider">
+    <div class="accessory-slide">
+      <img src="img/accessories/acc_1.png" alt="accessory" width="68" height="152">
+      <p class="accessory-name">X</p>
+      <p class="accessory-description">X</p>
+      <p class="accessory-price">X &#8381;</p>
+    </div>
+    <div class="accessory-slide">
+      <img src="img/accessories/acc_2.png" alt="accessory" width="196" height="89">
+      <p class="accessory-name">Сумка на руль B-soul</p>
+      <p class="accessory-description">15x10x5 cm натуральная кожа</p>
+      <p class="accessory-price">3200 &#8381;</p>
+    </div>
+    <div class="accessory-slide">
+      <img src="img/accessories/acc_3.png" alt="accessory" width="167" height="93">
+      <p class="accessory-name">Грипсы Propalm</p>
+      <p class="accessory-description">натуральная кожа с фиксаторами</p>
+      <p class="accessory-price">1800 &#8381;</p>
+    </div>
+    <div class="accessory-slide">
+      <img src="img/accessories/acc_4.png" alt="accessory" width="197" height="143">
+      <p class="accessory-name">Седло Brooks B66S</p>
+      <p class="accessory-description">натуральная кожа доступно в 3 цветах</p>
+      <p class="accessory-price">8625 &#8381</p>
+    </div>
+    <div class="accessory-slide">
+      <img src="img/accessories/acc_5.png" alt="accessory" width="215" height="155">
+      <p class="accessory-name">Колеса Strida 18"</p>
+      <p class="accessory-description">покрышка Innova цена за 2 колеса</p>
+      <p class="accessory-price">6780 &#8381;</p>
+    </div>
+    <div class="accessory-slide">
+      <img src="img/accessories/acc_6.png" alt="accessory" width="123" height="178">
+      <p class="accessory-name">X</p>
+      <p class="accessory-description">X</p>
+      <p class="accessory-price">X &#8381;</p>
+    </div>
+    <div class="accessories__slider-button-next">&gt;</div>
+    <div class="accessories__slider-button-prev">&lt;</div>
+  </div>
+  <a class=" accessories__btn" href="#">Перейти в каталог</a>
+</div>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__top-text-block">
+      <h2>Вступай в клуб</h2>
+      <p>У тебя уже есть чоппер-байк?</p>
+      <p>Регистрируйся и получай специальные привелегии, приглашения на закрытые мероприятия, специальные цены в нашем
+        магазине и много других плюшек.</p>
+      <a class="footer__top-btn" href="#">Вступить</a>
+    </div>
+    <div class="footer__top-picture">
+      <img src="img/image.png" alt="picture" width="518" height="389">
+    </div>
+  </div>
+  <div class="footer__menu">
+    <ul>
+      <li><a href="#">Велосипеды</a></li>
+      <li><a href="#">Аксессуары</a></li>
+      <li><a href="#">Запчасти</a></li>
+      <li><a href="#">Мастерская</a></li>
+      <li><a href="#">Доставка и оплата</a></li>
+      <li><a href="#">Тест-драйв</a></li>
+      <li><a href="#">Рассрочка</a></li>
+      <li><a href="#">Вступление в клуб</a></li>
+    </ul>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__social">
+      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-in" href="#">Инстаграм</a>
+    </div>
+    <div class="footer__logo">
+      <img src="img/logo.png" alt="Bikeshop Chopper" width="184" height="30">
+    </div>
+    <div class="footer__copyright">
+      <p>©2018 | Политика конфиденциальности</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
