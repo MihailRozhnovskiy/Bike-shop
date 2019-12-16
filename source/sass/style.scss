@@ -20,18 +20,21 @@
 
 %sprite {
   display: inline-block;
-  width: 22px;
-  height: 22px;
+  width: 23px;
+  height: 23px;
   margin-right: 20px;
-  //color: #9b8869;
-  border: 1px solid #9b8869;
-  //background: sprite;
+  //border: 1px solid #9b8869;
+  background: url("../img/sprites.png") no-repeat;
+}
+
+%zero_padd_marg {
+  margin: 0;
+  padding: 0;
 }
 
 body {
   min-width: 1024px;
-  margin: 0;
-  padding: 0;
+  @extend %zero_padd_marg;
   font-family: "HaginCapsMedium", sans-serif;
   color: #817155;
   background-color: #e9e1d5;
@@ -77,17 +80,25 @@ body {
       .user-btn {
         @extend %sprite;
       }
+      .user-btn-us {
+        background-position: -14px -15px;
+      }
+      .user-btn-s {
+        background-position: -62px -15px;
+      }
+      .user-btn-b {
+        background-position: -112px -14px;
+      }
     }
   }
   .header__promo {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     margin-top: 180px;
-    margin-left: 600px;
+    margin-right: 60px;
     h1 {
-      margin: 0;
-      padding: 0;
+      @extend %zero_padd_marg;
       font-size: 100px;
       line-height: 100px;
       letter-spacing: 0.04em;
@@ -96,8 +107,7 @@ body {
       color: #baa480;
     }
     p {
-      margin: 0;
-      padding: 0;
+      @extend %zero_padd_marg;
       font-size: 65px;
       line-height: 90px;
       letter-spacing: 0.04em;
@@ -107,6 +117,7 @@ body {
     .promo-btn {
       @extend %buttons;
       margin-top: 60px;
+      margin-right: 155px;
     }
   }
   .header__social {
@@ -116,6 +127,93 @@ body {
     font-size: 0;
     .social-btn {
       @extend %sprite;
+    }
+    .social-btn-vk {
+      background-position: -14px -63px;
+    }
+    .social-btn-fb {
+      background-position: -64px -63px;
+    }
+    .social-btn-in {
+      background-position: -111px -63px;
+    }
+  }
+}
+
+.bikes {
+  margin-top: 80px;
+  border-bottom: 1px solid #9b8869;;
+  .bikes__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      @extend %zero_padd_marg;
+      width: 900px;
+      font-size: 48px;
+      font-weight: normal;
+      line-height: 56px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #817155;;
+    }
+    p {
+      @extend %zero_padd_marg;
+      margin-top: 35px;
+      width: 850px;
+      font-family: "RobotoRegular", sans-serif;
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 30px;
+      text-align: center;
+      text-transform: none;
+      letter-spacing: 0.04em;
+      color: #817155;
+    }
+  }
+  .bikes__slider {
+    display: flex;
+
+    .bike-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      width: 283px;
+      height: 423px;
+      margin: 80px 23px 70px 23px;
+      border: 1px solid red;
+      .bike-name{
+        @extend %zero_padd_marg;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .bike-price{
+        @extend %zero_padd_marg;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ba4f4f;
+      }
+      .bike-description {
+        @extend %zero_padd_marg;
+        font-family: "RobotoRegular", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #9b8869;
+      }
+      img {
+        margin-bottom: 95px;
+
+      }
     }
   }
 }
