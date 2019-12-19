@@ -8,12 +8,15 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="header">
-    <div class="header__top">
-      <div class="header__logo">
+<div class="container">
+  <header class="header">
+    <div class="header__logo">
+      <a href="#">
         <img src="img/logo.png" alt="Bikeshop Chopper" width="184" height="30">
-      </div>
-      <ul class="main-nav">
+      </a>
+    </div>
+    <nav class="main-menu">
+      <ul>
         <li><a href="#">Велосипеды</a></li>
         <li><a href="#">Аксессуары</a></li>
         <li><a href="#">Запчасти</a></li>
@@ -21,66 +24,84 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <ul class="user-nav">
-        <li><a class="user-btn user-btn-us" href="#">Пользователи</a></li>
-        <li><a class="user-btn user-btn-s" href="#">Поиск</a></li>
-        <li><a class="user-btn user-btn-b" href="#">Корзина</a></li>
-      </ul>
-    </div>
-    <div class="header__promo">
+    </nav>
+    <ul class="user-nav">
+      <li><a class="user-btn user-btn-us" href="#">Пользователи</a></li>
+      <li><a class="user-btn user-btn-s" href="#">Поиск</a></li>
+      <li><a class="user-btn user-btn-b" href="#">Корзина</a></li>
+    </ul>
+  </header>
+
+  <div class="promo">
+    <div class="content">
       <h1>велосипеды</h1>
       <p>с твоим характером</p>
       <a class="promo-btn" href="#">В магазин</a>
+      <ul class="promo__social">
+        <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+        <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+        <li><a class="social-btn social-btn-in" href="#">Инстаграм</a></li>
+      </ul>
     </div>
-    <div class="header__social">
-      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-      <a class="social-btn social-btn-in" href="#">Инстаграм</a>
-    </div>
-</header>
+  </div>
+</div>
 
 <div class="bikes">
-  <div class="bikes__text-block">
-    <h2>У нас более 200 моделей прогулочных велосипедов для настоящих мужчин</h2>
-    <p>Бесплатный выездной тест-драйв на все модели. Система рассрочки 0-0-5.
-      Для членов клуба бесплатно предоставляется выездной сервис, зимнее хранение и куча привелегий от партнеров.</p>
-  </div>
-  <div class="bikes__slider">
-    <div class="bike-slide">
-      <div class="bike-img-border">
-      <img src="img/bikes/bike_1.png" alt="bike" width="319" height="147">
-       <!--<a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>-->
+  <div class="bikes__content">
+    <div class="bikes__text-block">
+        <h2>У нас более 200 моделей прогулочных велосипедов для настоящих мужчин</h2>
+        <p>Бесплатный выездной тест-драйв на все модели. Система рассрочки 0-0-5.
+        Для членов клуба бесплатно предоставляется выездной сервис, зимнее хранение и куча привелегий от партнеров.</p>
+    </div>
+    <div class="bikes__slider">
+      <div class="bikes__slider-button-prev">&lt;</div>
+      <div class="bike-slide">
+        <div class="bike-img-border">
+          <img src="img/bikes/bike_1.png" alt="bike" width="319" height="147">
+          <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
+        </div>
+        <span class="bike-name">Micargi cyclone electric</span>
+        <span class="bike-description">26", 500W, 5 скоростей, сталь, США</span>
+        <span class="bike-price">154 000 &#8381;</span>
       </div>
-      <p class="bike-name">Micargi cyclone<br> electric</p>
-      <p class="bike-description">26", 500W, 5 скоростей, сталь,<br> США</p>
-      <p class="bike-price">154 000 &#8381;</p>
+      <div class="bike-slide">
+        <div class="bike-img-border">
+          <img src="img/bikes/bike_2.png" alt="bike" width="283" height="131">
+          <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
+        </div>
+        <span class="bike-name">Neuzer chopper apocalypse</span>
+        <span class="bike-description">24", сталь Hi-Ten, Венгрия</span>
+        <span class="bike-price">75 000 &#8381;</span>
+      </div>
+      <div class="bike-slide">
+        <div class="bike-img-border">
+          <img src="img/bikes/bike_3.png" alt="bike" width="262" height="128">
+          <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
+        </div>
+        <span class="bike-name">Schwinn stingray occ</span>
+        <span class="bike-description">20"+24", сталь, США</span>
+        <span class="bike-price">34 000 &#8381;</span>
+      </div>
+      <div class="bike-slide">
+        <div class="bike-img-border">
+          <img src="img/bikes/bike_4.png" alt="bike" width="266" height="199">
+          <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
+        </div>
+        <span class="bike-name">Harley Davidson</span>
+        <span class="bike-description">20", сталь, Китай</span>
+        <span class="bike-price">23 000 &#8381;</span>
+      </div>
+      <div class="bike-slide">
+        <div class="bike-img-border">
+          <img src="img/bikes/bike_5.png" alt="bike" width="286" height="178">
+          <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
+        </div>
+        <span class="bike-name">X-front snowmobile</span>
+        <span class="bike-description">24", сталь, Китай</span>
+        <span class="bike-price">42 000 &#8381;</span>
+      </div>
+      <div class="bikes__slider-button-next">&gt;</div>
     </div>
-    <div class="bike-slide">
-      <img src="img/bikes/bike_2.png" alt="bike" width="283" height="131">
-      <p class="bike-name">Neuzer chopper<br> apocalypse</p>
-      <p class="bike-description">24", сталь Hi-Ten,<br> Венгрия</p>
-      <p class="bike-price">75 000 &#8381;</p>
-    </div>
-    <div class="bike-slide">
-      <img src="img/bikes/bike_3.png" alt="bike" width="262" height="128">
-      <p class="bike-name">Schwinn<br> stingray occ</p>
-      <p class="bike-description">20"+24", сталь,<br> США</p>
-      <p class="bike-price">34 000 &#8381;</p>
-    </div>
-    <div class="bike-slide">
-      <img src="img/bikes/bike_4.png" alt="bike" width="266" height="199">
-      <p class="bike-name">Harley<br> Davidson</p>
-      <p class="bike-description">20", сталь,<br> Китай</p>
-      <p class="bike-price">23 000 &#8381;</p>
-    </div>
-    <div class="bike-slide">
-      <img src="img/bikes/bike_5.png" alt="bike" width="286" height="178">
-      <p class="bike-name">X-front<br> snowmobile</p>
-      <p class="bike-description">24", сталь,<br> Китай</p>
-      <p class="bike-price">42 000 &#8381;</p>
-    </div>
-    <div class="bikes__slider-button-next">&gt;</div>
-    <div class="bikes__slider-button-prev">&lt;</div>
   </div>
   <a class="bikes__btn" href="#">Все велосипеды</a>
 </div>

@@ -22,7 +22,6 @@
   display: inline-block;
   width: 23px;
   height: 23px;
-  margin-right: 20px;
   //border: 1px solid #9b8869;
   background: url("../img/sprites.png") no-repeat;
 }
@@ -40,23 +39,23 @@ body {
   background-color: #e9e1d5;
 }
 
-
-.header {
+.container {
   min-height: 768px;
-  padding: 37px 41px;
+  padding: 37px 53px;
   background: url("../img/header_image.png") no-repeat center;
   background-size: cover;
-  .header__top {
+  .header {
+    @extend %zero_padd_marg;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     .header__logo img {
       width: 184px;
       height: 30px;
-      }
-    .main-nav {
+    }
+    .main-menu ul {
+      @extend %zero_padd_marg;
       display: flex;
-      justify-content: space-between;
       list-style: none;
       li {
         margin-right: 20px;
@@ -74,9 +73,15 @@ body {
       }
     }
     .user-nav {
+      @extend %zero_padd_marg;
       display: flex;
-      justify-content: space-between;
       font-size: 0;
+      li {
+        margin-right: 20px;
+      }
+      li:last-child {
+        margin-right: 0;
+      }
       .user-btn {
         @extend %sprite;
       }
@@ -91,129 +96,153 @@ body {
       }
     }
   }
-  .header__promo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 180px;
-    margin-right: 60px;
-    h1 {
-      @extend %zero_padd_marg;
-      font-size: 100px;
-      line-height: 100px;
-      letter-spacing: 0.04em;
-      font-weight: normal;
-      text-transform: uppercase;
-      color: #baa480;
-    }
-    p {
-      @extend %zero_padd_marg;
-      font-size: 65px;
-      line-height: 90px;
-      letter-spacing: 0.04em;
-      font-weight: normal;
-      color: #baa480;
-    }
-    .promo-btn {
-      @extend %buttons;
-      margin-top: 60px;
-      margin-right: 155px;
-    }
-  }
-  .header__social {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 175px; // не понимаю почему не работают свойства align-items, align-self
-    font-size: 0;
-    .social-btn {
-      @extend %sprite;
-    }
-    .social-btn-vk {
-      background-position: -14px -63px;
-    }
-    .social-btn-fb {
-      background-position: -64px -63px;
-    }
-    .social-btn-in {
-      background-position: -111px -63px;
+  .promo {
+    padding-left: 50%;
+    .content {
+      padding-top: 190px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        @extend %zero_padd_marg;
+        font-size: 100px;
+        line-height: 100px;
+        letter-spacing: 0.04em;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #baa480;
+      }
+      p {
+        @extend %zero_padd_marg;
+        margin-bottom: 60px;
+        font-size: 65px;
+        line-height: 90px;
+        letter-spacing: 0.04em;
+        font-weight: normal;
+        color: #baa480;
+      }
+      .promo-btn {
+        @extend %buttons;
+        margin-bottom: 200px;
+      }
+      .promo__social {
+        @extend %zero_padd_marg;
+        display: flex;
+        align-self: flex-end;
+        font-size: 0;
+        li {
+          margin-right: 20px;
+        }
+        li:last-child {
+          margin-right: 0;
+        }
+        .social-btn {
+          @extend %sprite;
+        }
+        .social-btn-vk {
+          background-position: -14px -63px;
+        }
+        .social-btn-fb {
+          background-position: -64px -63px;
+        }
+        .social-btn-in {
+          background-position: -111px -63px;
+        }
+      }
     }
   }
 }
 
 .bikes {
-  margin-top: 80px;
-  border-bottom: 1px solid #9b8869;;
-  .bikes__text-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h2 {
-      @extend %zero_padd_marg;
-      width: 900px;
-      font-size: 48px;
-      font-weight: normal;
-      line-height: 56px;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: #817155;;
-    }
-    p {
-      @extend %zero_padd_marg;
-      margin-top: 35px;
-      width: 850px;
-      font-family: "RobotoRegular", sans-serif;
-      font-size: 22px;
-      font-weight: normal;
-      line-height: 30px;
-      text-align: center;
-      text-transform: none;
-      letter-spacing: 0.04em;
-      color: #817155;
-    }
-  }
-  .bikes__slider {
-    display: flex;
-
-    .bike-slide {
+  padding: 80px 53px;
+  .bikes__content {
+    .bikes__text-block {
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
       align-items: center;
-      width: 283px;
-      height: 423px;
-      margin: 80px 23px 70px 23px;
-      border: 1px solid red;
-      .bike-name{
+      margin-bottom: 80px;
+      h2 {
         @extend %zero_padd_marg;
-        font-size: 24px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-      }
-      .bike-price{
-        @extend %zero_padd_marg;
-        font-size: 24px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #ba4f4f;
-      }
-      .bike-description {
-        @extend %zero_padd_marg;
-        font-family: "RobotoRegular", sans-serif;
-        font-style: normal;
+        width: 900px;
+        font-size: 48px;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 18px;
+        line-height: 56px;
         text-align: center;
-        letter-spacing: 0.2px;
-        color: #9b8869;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: #817155;
+        margin-bottom: 35px;
       }
-      img {
-        margin-bottom: 95px;
+      p {
+        @extend %zero_padd_marg;
+        width: 850px;
+        font-family: "RobotoRegular", sans-serif;
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 30px;
+        text-align: center;
+        text-transform: none;
+        letter-spacing: 0.04em;
+        color: #817155;
+      }
+    }
+    .bikes__slider {
+      margin-bottom: 80px;
+      display: flex;
+      .bike-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 283px;
+        height: 423px;
+        margin-right: 45px;
+        border: 1px solid red;
+        .bike-name,
+        .bike-price {
+          @extend %zero_padd_marg;
+          width: 232px;
+          font-size: 24px;
+          line-height: 30px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .bike-price {
+          color: #ba4f4f;
+        }
+        .bike-description {
+          @extend %zero_padd_marg;
+          font-family: "RobotoRegular", sans-serif;
+          font-size: 14px;
+          line-height: 18px;
+          text-align: center;
+          letter-spacing: 0.2px;
+          color: #9b8869;
+        }
+        .bike-img-border {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          width: 178px;
+          height: 240px;
+          border: 6px solid #f0ede8;
+          margin: 0 53px 45px 53px;
+          font-size: 0;
 
+          .bike-btn-add-to-cart {
+            position: relative;
+            top: 30px;
+            @extend %sprite;
+            width: 50px;
+            height: 50px;
+            background-color: #ba4f4f;
+            background-position: -99px -150px;
+          }
+        }
       }
     }
   }
 }
+
+
