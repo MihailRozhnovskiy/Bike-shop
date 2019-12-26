@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<div class="container">
+<div class="header-container">
   <header class="header">
     <div class="header__logo">
       <a href="#">
@@ -107,105 +107,133 @@
 </div>
 
 <div class="service">
-  <div class="service__picture">
-    <img src="img/rectangle_4.png" alt="picture" width="467" height="389">
+  <div class="service__container">
+      <div class="service__picture">
+        <img src="img/rectangle_4.png" alt="picture" width="461" height="356">
+      </div>
+      <div class="service__text-block">
+        <h2>Мастерская</h2>
+        <p>Наши мастера всегда готовы привести в чувство вашего коня, кастомизировать любую модель или просто помочь советом.
+        Возможен выезд по вашему адресу. Для велосипедов, купленных у нас, обслуживание предоставляется бесплатно.</p>
+
+        <a class="service__btn" href="#">Подробнее</a>
+      </div>
   </div>
-  <div class="service__text-block">
-    <h2>Мастерская</h2>
-    <p>Наши мастера всегда готовы привести в чувство вашего коня, кастомизировать любую модель или просто помочь советом.
-      Возможен выезд по вашему адресу. Для велосипедов, купленных у нас, обслуживание предоставляется бесплатно.</p>
-  </div>
-  <a class="service__btn" href="#">Подробнее</a>
 </div>
 
 <div class="accessories">
-  <div class="accessories__text-block">
-    <h2>Запчасти и аксессуары</h2>
-    <p>Всегда большой выбор запчастей и аксессуаров для чоппер-байков.
-      Если вы чего-то не нашли в наличии, наши консультанты помогут заказать и доставить товар из любой точки мира.</p>
+  <div class="accessories__content">
+    <div class="accessories__text-block">
+      <h2>Запчасти и аксессуары</h2>
+      <p>Всегда большой выбор запчастей и аксессуаров для чоппер-байков.
+        Если вы чего-то не нашли в наличии, наши консультанты помогут заказать и доставить товар из любой точки мира.</p>
+    </div>
+    <div class="accessories__slider">
+      <a class="accessories__slider-button-prev" href="#"></a>
+      <div class="accessory-slide">
+        <div class="accessory-img-border">
+          <img src="img/accessories/acc_4.png" alt="accessory" width="197" height="143">
+          <a class="accessory-btn-add-to-cart" href="#">Добавить в корзину</a>
+        </div>
+        <span class="accessory-name">X</span>
+        <span class="accessory-description">X</span>
+        <span class="accessory-price">X &#8381;</span>
+      </div>
+      <div class="accessory-slide">
+        <div class="accessory-img-border">
+          <img src="img/accessories/acc_2.png" alt="accessory" width="196" height="89">
+          <a class="accessory-btn-add-to-cart" href="#">Добавить в корзину</a>
+        </div>
+        <span class="accessory-name">Сумка на руль B-soul</span>
+        <span class="accessory-description">15x10x5 cm натуральная кожа</span>
+        <span class="accessory-price">3200 &#8381;</span>
+      </div>
+      <div class="accessory-slide">
+        <div class="accessory-img-border">
+          <img src="img/accessories/acc_3.png" alt="accessory" width="167" height="93">
+          <a class="accessory-btn-add-to-cart" href="#">Добавить в корзину</a>
+        </div>
+        <span class="accessory-name">Грипсы Propalm</span>
+        <span class="accessory-description">натуральная кожа с фиксаторами</span>
+        <span class="accessory-price">1800 &#8381;</span>
+      </div>
+      <div class="accessory-slide">
+        <div class="accessory-img-border">
+          <img src="img/accessories/acc_4.png" alt="accessory" width="197" height="143">
+          <a class="accessory-btn-add-to-cart" href="#">Добавить в корзину</a>
+        </div>
+        <span class="accessory-name">Седло Brooks B66S</span>
+        <span class="accessory-description">натуральная кожа доступно в 3 цветах</span>
+        <span class="accessory-price">8625 &#8381;</span>
+      </div>
+      <div class="accessory-slide">
+        <div class="accessory-img-border">
+          <img src="img/accessories/acc_5.png" alt="accessory" width="215" height="155">
+          <a class="accessory-btn-add-to-cart" href="#">Добавить в корзину</a>
+        </div>
+        <span class="accessory-name">Колеса Strida 18"</span>
+        <span class="accessory-description">покрышка Innova цена за 2 колеса</span>
+        <span class="accessory-price">6780 &#8381;</span>
+      </div>
+      <div class="accessory-slide">
+        <div class="accessory-img-border">
+          <img src="img/accessories/acc_4.png" alt="accessory" width="197" height="143">
+          <a class="accessory-btn-add-to-cart" href="#">Добавить в корзину</a>
+        </div>
+        <span class="accessory-name">X</span>
+        <span class="accessory-description">X</span>
+        <span class="accessory-price">X &#8381;</span>
+      </div>
+      <a class="accessories__slider-button-next" href="#"></a>
+    </div>
+    <a class="accessories__btn" href="#">Перейти в каталог</a>
   </div>
-  <div class="accessories__slider">
-    <div class="accessory-slide">
-      <img src="img/accessories/acc_1.png" alt="accessory" width="68" height="152">
-      <p class="accessory-name">X</p>
-      <p class="accessory-description">X</p>
-      <p class="accessory-price">X &#8381;</p>
-    </div>
-    <div class="accessory-slide">
-      <img src="img/accessories/acc_2.png" alt="accessory" width="196" height="89">
-      <p class="accessory-name">Сумка на руль B-soul</p>
-      <p class="accessory-description">15x10x5 cm натуральная кожа</p>
-      <p class="accessory-price">3200 &#8381;</p>
-    </div>
-    <div class="accessory-slide">
-      <img src="img/accessories/acc_3.png" alt="accessory" width="167" height="93">
-      <p class="accessory-name">Грипсы Propalm</p>
-      <p class="accessory-description">натуральная кожа с фиксаторами</p>
-      <p class="accessory-price">1800 &#8381;</p>
-    </div>
-    <div class="accessory-slide">
-      <img src="img/accessories/acc_4.png" alt="accessory" width="197" height="143">
-      <p class="accessory-name">Седло Brooks B66S</p>
-      <p class="accessory-description">натуральная кожа доступно в 3 цветах</p>
-      <p class="accessory-price">8625 &#8381</p>
-    </div>
-    <div class="accessory-slide">
-      <img src="img/accessories/acc_5.png" alt="accessory" width="215" height="155">
-      <p class="accessory-name">Колеса Strida 18"</p>
-      <p class="accessory-description">покрышка Innova цена за 2 колеса</p>
-      <p class="accessory-price">6780 &#8381;</p>
-    </div>
-    <div class="accessory-slide">
-      <img src="img/accessories/acc_6.png" alt="accessory" width="123" height="178">
-      <p class="accessory-name">X</p>
-      <p class="accessory-description">X</p>
-      <p class="accessory-price">X &#8381;</p>
-    </div>
-    <div class="accessories__slider-button-next">&gt;</div>
-    <div class="accessories__slider-button-prev">&lt;</div>
-  </div>
-  <a class=" accessories__btn" href="#">Перейти в каталог</a>
 </div>
 
-<footer class="footer">
-  <div class="footer__top">
-    <div class="footer__top-text-block">
+<div class="footer-container">
+  <div class="bike-club">
+    <div class="bike-club__text-block">
       <h2>Вступай в клуб</h2>
-      <p>У тебя уже есть чоппер-байк?</p>
+      <span class="question">У тебя уже есть чоппер-байк?</span>
       <p>Регистрируйся и получай специальные привелегии, приглашения на закрытые мероприятия, специальные цены в нашем
         магазине и много других плюшек.</p>
-      <a class="footer__top-btn" href="#">Вступить</a>
+      <a class="bike-club__btn" href="#">Вступить</a>
     </div>
-    <div class="footer__top-picture">
-      <img src="img/image.png" alt="picture" width="518" height="389">
-    </div>
-  </div>
-  <div class="footer__menu">
-    <ul>
-      <li><a href="#">Велосипеды</a></li>
-      <li><a href="#">Аксессуары</a></li>
-      <li><a href="#">Запчасти</a></li>
-      <li><a href="#">Мастерская</a></li>
-      <li><a href="#">Доставка и оплата</a></li>
-      <li><a href="#">Тест-драйв</a></li>
-      <li><a href="#">Рассрочка</a></li>
-      <li><a href="#">Вступление в клуб</a></li>
-    </ul>
-  </div>
-  <div class="footer__bottom">
-    <div class="footer__social">
-      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-      <a class="social-btn social-btn-in" href="#">Инстаграм</a>
-    </div>
-    <div class="footer__logo">
-      <img src="img/logo.png" alt="Bikeshop Chopper" width="184" height="30">
-    </div>
-    <div class="footer__copyright">
-      <p>©2018 | Политика конфиденциальности</p>
+    <div class="bike-club__picture">
+      <img src="img/image.png" alt="picture" width="526" height="357">
     </div>
   </div>
-</footer>
+
+  <footer class="footer">
+    <nav class="footer__main-menu">
+      <ul>
+        <li><a href="#">Велосипеды</a></li>
+        <li><a href="#">Аксессуары</a></li>
+        <li><a href="#">Запчасти</a></li>
+        <li><a href="#">Мастерская</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">Тест-драйв</a></li>
+        <li><a href="#">Рассрочка</a></li>
+        <li><a href="#">Вступление в клуб</a></li>
+      </ul>
+    </nav>
+    <div class="footer__bottom">
+      <ul class="footer__social">
+        <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+        <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
+        <li><a class="social-btn social-btn-in" href="#">Инстаграм</a></li>
+      </ul>
+      <div class="footer__logo">
+        <a href="#">
+          <img src="img/logo.png" alt="Bikeshop Chopper" width="184" height="30">
+        </a>
+      </div>
+      <div class="footer__copyright">
+        <p>©2018 | Политика конфиденциальности</p>
+      </div>
+    </div>
+  </footer>
+</div>
 <script src="js/slider.js"></script>
 </body>
 
