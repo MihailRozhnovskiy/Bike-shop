@@ -162,7 +162,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    //border-bottom: 1px solid #9b8869;
 
     .bikes__text-block,
     .accessories__text-block {
@@ -201,9 +200,13 @@ body {
 
     .bikes__slider,
     .accessories__slider {
-      margin-bottom: 80px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
+      width: 80%;
+      overflow: hidden;
+      margin-bottom: 80px;
+      transition: transform 1s ease-in-out;
       .bikes__slider-button-prev,
       .bikes__slider-button-next,
       .accessories__slider-button-prev,
@@ -212,14 +215,13 @@ body {
         height: 40px;
         bottom: 80px;
         @extend %sprite;
-        border: 3px solid red;
+        border: 1px solid red;
         z-index: 1;
       }
 
       .bikes__slider-button-prev,
       .accessories__slider-button-prev {
         position: relative;
-        left: 200px;
         background-position: -15px -154px;
       }
 
@@ -230,7 +232,7 @@ body {
       .bikes__slider-button-next,
       .accessories__slider-button-next {
         position: relative;
-        right: 200px;
+        right: 50px;
         background-position: -68px -154px;
       }
 
@@ -238,74 +240,82 @@ body {
         right: 400px;
       }
 
-      .bike-slide,
-      .accessory-slide {
-        //padding: 0 53px 45px 53px;
+      .bikes__carousel {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
-        width: 283px;
-        height: 423px;
-        margin-right: 45px;
-        background-color: #e9e1d5;
-        //border: 1px solid red;
-        .bike-name,
-        .bike-price,
-        .accessory-name,
-        .accessory-price {
-          @extend %zero_padd_marg;
-          width: 232px;
-          font-size: 24px;
-          line-height: 30px;
-          text-align: center;
-          text-transform: uppercase;
-        }
-
-        .bike-price,
-        .accessory-price {
-          color: #ba4f4f;
-        }
-
-        .bike-description,
-        .accessory-description {
-          @extend %zero_padd_marg;
-          font-family: "RobotoRegular", sans-serif;
-          font-size: 14px;
-          line-height: 18px;
-          text-align: center;
-          letter-spacing: 0.2px;
-          color: #9b8869;
-        }
-
-        .bike-img-border,
-        .accessory-img-border {
+        width: 100%;
+        transition: transform 1s ease-in-out;
+        .bike-slide,
+        .accessory-slide {
           display: flex;
           flex-direction: column;
-          justify-content: flex-end;
+          justify-content: space-between;
           align-items: center;
-          width: 178px;
-          height: 240px;
-          border: 6px solid #f0ede8;
-          margin: 0 53px 45px 53px;
-          font-size: 0;
-
-          .bike-btn-add-to-cart,
-          .accessory-btn-add-to-cart {
-            position: relative;
-            top: 30px;
-            @extend %sprite;
-            width: 50px;
-            height: 50px;
-            background-color: #ba4f4f;
-            background-position: -99px -150px;
+          width: 283px;
+          height: 423px;
+          margin-right: 45px;
+          background-color: #e9e1d5;
+          //border: 1px solid red;
+          .bike-name,
+          .bike-price,
+          .accessory-name,
+          .accessory-price {
+            @extend %zero_padd_marg;
+            width: 232px;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            text-transform: uppercase;
           }
-          img {
-            mix-blend-mode: multiply;
+
+          .bike-price,
+          .accessory-price {
+            color: #ba4f4f;
+          }
+
+          .bike-description,
+          .accessory-description {
+            @extend %zero_padd_marg;
+            font-family: "RobotoRegular", sans-serif;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #9b8869;
+          }
+
+          .bike-img-border,
+          .accessory-img-border {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            width: 178px;
+            height: 240px;
+            border: 6px solid #f0ede8;
+            margin: 0 53px 45px 53px;
+            font-size: 0;
+
+            .bike-btn-add-to-cart,
+            .accessory-btn-add-to-cart {
+              position: relative;
+              top: 30px;
+              @extend %sprite;
+              width: 50px;
+              height: 50px;
+              background-color: #ba4f4f;
+              background-position: -99px -150px;
+            }
+            img {
+              mix-blend-mode: multiply;
+            }
           }
         }
       }
     }
+
+
     .bikes__btn,
     .accessories__btn {
       @extend %buttons;
