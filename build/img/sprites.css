@@ -1,4 +1,4 @@
-.basket, .fb-(1), .fb, .inst-(1), .inst, .left, .Mask, .right, .search, .user, .VK-(1), .VK{
+.basket, .fb-(1), .fb, .inst-(1), .inst, .left, .Mask, .right, .search, .user, .VK-(1), .VK, .Union, .Mask, .#1, .#5, .Group-6, .#2{
 	background: url(sprites.png) no-repeat;
 }
 
@@ -72,5 +72,41 @@
 	background-position: -15px -68px ;
 	width: 22px;
 	height: 13px;
+}
+
+.Union{
+	background-position: -15px -218px ;
+	width: 28px;
+	height: 14px;
+}
+
+.Mask{
+	background-position: -68px -223px ;
+	width: 12px;
+	height: 6px;
+}
+
+.#1{
+	background-position: -112px -211px ;
+	width: 24px;
+	height: 24px;
+}
+
+.#5{
+	background-position: -13px -260px ;
+	width: 24px;
+	height: 24px;
+}
+
+.Group-6{
+	background-position: -61px -261px ;
+	width: 26px;
+	height: 26px;
+}
+
+.#2{
+	background-position: -114px -264px ;
+	width: 17px;
+	height: 16px;
 }
 

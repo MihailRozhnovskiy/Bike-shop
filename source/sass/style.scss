@@ -20,8 +20,8 @@
 
 %sprite {
   display: inline-block;
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 25px;
   //border: 1px solid #9b8869;
   background: url("../img/sprites.png") no-repeat;
 }
@@ -44,58 +44,7 @@ body {
   padding: 37px 53px;
   background: url("../img/header_image.png") no-repeat center;
   background-size: cover;
-  .header {
-    @extend %zero_padd_marg;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .header__logo img {
-      width: 184px;
-      height: 30px;
-    }
-    .main-menu ul {
-      @extend %zero_padd_marg;
-      display: flex;
-      list-style: none;
-      li {
-        margin-right: 20px;
-        font-size: 18px;
-        line-height: 18px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-      }
-      li:last-child {
-        margin-right: 0;
-      }
-      a {
-        color: #9b8869;
-        text-decoration: none;
-      }
-    }
-    .user-nav {
-      @extend %zero_padd_marg;
-      display: flex;
-      font-size: 0;
-      li {
-        margin-right: 20px;
-      }
-      li:last-child {
-        margin-right: 0;
-      }
-      .user-btn {
-        @extend %sprite;
-      }
-      .user-btn-us {
-        background-position: -14px -15px;
-      }
-      .user-btn-s {
-        background-position: -62px -15px;
-      }
-      .user-btn-b {
-        background-position: -112px -14px;
-      }
-    }
-  }
+  @import "header";
   .promo {
     padding-left: 50%;
     .content {
@@ -315,7 +264,6 @@ body {
       }
     }
 
-
     .bikes__btn,
     .accessories__btn {
       @extend %buttons;
@@ -428,82 +376,8 @@ body {
       }
     }
   }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    .footer__main-menu ul {
-      @extend %zero_padd_marg;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      list-style: none;
-      border-top: 1px solid #baa480;
-      border-bottom: 1px solid #baa480;
-      padding: 22px 0;
-      margin-bottom: 35px;
-      li {
-        font-size: 18px;
-        line-height: 18px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-      }
-      a {
-        color: #9b8869;
-        text-decoration: none;
-      }
-    }
-
-    .footer__bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .footer__social {
-        @extend %zero_padd_marg;
-        display: flex;
-        font-size: 0;
-        li {
-          margin-right: 20px;
-        }
-        li:last-child {
-          margin-right: 0;
-        }
-        .social-btn {
-          @extend %sprite;
-        }
-        .social-btn-vk {
-          background-position: -13px -112px;
-        }
-        .social-btn-fb {
-          background-position: -62px -111px;
-        }
-        .social-btn-in {
-          background-position: -111px -113px;
-        }
-      }
-
-      .footer__logo {
-        width: 184px;
-        height: 30px;
-      }
-
-      .footer__copyright {
-        @extend %zero_padd_marg;
-        p {
-          @extend %zero_padd_marg;
-          font-family: "RobotoRegular", sans-serif;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: lighter;
-          line-height: 18px;
-          text-transform: none;
-          letter-spacing: 0.04em;
-          color: #baa480;
-        }
-      }
-    }
-  }
+  @import "footer";
 }
+
+@import "catalogue";
+@import "card";
