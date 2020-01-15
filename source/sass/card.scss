@@ -19,9 +19,8 @@
 
 
 .card-header {
-  padding: 40px 50px 25px 50px;
-  border-bottom: 1px solid #9b8869;
   @import "header";
+  border-bottom: 1px solid #9b8869;
 }
 
 .card-product-route {
@@ -283,113 +282,24 @@
 }
 
 .card-other {
+  padding-bottom: 80px;
   .card-other__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    h2 {
-      @extend %zero_padd_marg;
-      font-size: 48px;
-      font-weight: 300;
-      line-height: 48px;
-      text-transform: uppercase;
-      color: #817155;
-      margin-bottom: 80px;
-    }
-
-    .accessories__slider {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      overflow: hidden;
-
-      .accessories__slider-button-prev,
-      .accessories__slider-button-next {
-        position: relative;
-        min-width: 15px;
-        height: 40px;
-        bottom: 80px;
-        @extend %sprite;
-        //border: 1px solid red;
-      }
-
-      .accessories__slider-button-prev {
-        left: 50px;
-        background-position: -15px -154px;
-      }
-
-      .accessories__slider-button-next {
-        right: 700px;
-        background-position: -68px -154px;
-      }
-
-      .accessory-slide {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 283px;
-        height: 423px;
-        margin-right: 45px;
-        background-color: #e9e1d5;
-        //border: 1px solid red;
-
-        .accessory-name,
-        .accessory-price {
-          @extend %zero_padd_marg;
-          width: 232px;
-          font-size: 24px;
-          line-height: 30px;
-          text-align: center;
-          text-transform: uppercase;
-        }
-
-        .accessory-price {
-          color: #ba4f4f;
-        }
-
-        .accessory-description {
-          @extend %zero_padd_marg;
-          font-family: "RobotoRegular", sans-serif;
-          font-size: 14px;
-          line-height: 18px;
-          text-align: center;
-          letter-spacing: 0.2px;
-          color: #9b8869;
-        }
-
-        .accessory-img-border {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          align-items: center;
-          width: 178px;
-          height: 240px;
-          border: 6px solid #f0ede8;
-          margin: 0 53px 45px 53px;
-          font-size: 0;
-
-          .accessory-btn-add-to-cart {
-            position: relative;
-            top: 30px;
-            @extend %sprite;
-            width: 50px;
-            height: 50px;
-            background-color: #ba4f4f;
-            background-position: -99px -150px;
-          }
-          img {
-            mix-blend-mode: multiply;
-          }
-        }
-      }
-    }
   }
+  h2 {
+    @extend %zero_padd_marg;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #817155;
+    margin-bottom: 80px;
+  }
+@import "slider";
 }
 
 .card-footer {
-  min-height: 125px;
-  padding: 80px 120px 50px 120px;
-  @import "footer";
+ @import "footer";
 }

@@ -10,11 +10,9 @@
 <body>
 <div class="header-container">
   <header class="header">
-    <div class="header__logo">
-      <a href="#">
-        <img src="img/logo.png" alt="Bikeshop Chopper" width="184" height="30">
-      </a>
-    </div>
+    <a class="header__logo" href="#">
+      <img src="img/logo.png" alt="Bikeshop Chopper" width="184" height="30">
+    </a>
     <nav class="main-menu">
       <ul>
         <li class="main"><a href="catalogue.html">Велосипеды</a></li>
@@ -53,150 +51,104 @@
         <p>Бесплатный выездной тест-драйв на все модели. Система рассрочки 0-0-5.
         Для членов клуба бесплатно предоставляется выездной сервис, зимнее хранение и куча привелегий от партнеров.</p>
     </div>
-
-    <div class="bikes__slider">
-      <a class="btn bikes__slider-button-prev" id="prev"></a>
-        <div class="bikes__carousel">
-                  <div class="bike-slide">
-                    <div class="bike-img-border">
-                      <img src="img/bikes/bike_1.png" alt="bike" width="319" height="147">
-                      <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
-                    </div>
-                    <span class="bike-name">Micargi cyclone electric</span>
-                    <span class="bike-description">26", 500W, 5 скоростей, сталь, США</span>
-                    <span class="bike-price">154 000 &#8381;</span>
-                  </div>
-                  <div class="bike-slide">
-                    <div class="bike-img-border">
-                      <img src="img/bikes/bike_2.png" alt="bike" width="283" height="131">
-                      <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
-                    </div>
-                    <span class="bike-name">Neuzer chopper apocalypse</span>
-                    <span class="bike-description">24", сталь Hi-Ten, Венгрия</span>
-                    <span class="bike-price">75 000 &#8381;</span>
-                  </div>
-                  <div class="bike-slide">
-                    <div class="bike-img-border">
-                      <img src="img/bikes/bike_3.png" alt="bike" width="262" height="128">
-                      <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
-                    </div>
-                    <span class="bike-name">Schwinn stingray occ</span>
-                    <span class="bike-description">20"+24", сталь, США</span>
-                    <span class="bike-price">34 000 &#8381;</span>
-                  </div>
-                  <div class="bike-slide">
-                    <div class="bike-img-border">
-                      <img src="img/bikes/bike_4.png" alt="bike" width="266" height="166">
-                      <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
-                    </div>
-                    <span class="bike-name">Harley Davidson</span>
-                    <span class="bike-description">20", сталь, Китай</span>
-                    <span class="bike-price">23 000 &#8381;</span>
-                  </div>
-                  <div class="bike-slide">
-                    <div class="bike-img-border">
-                      <img src="img/bikes/bike_5.png" alt="bike" width="286" height="178">
-                      <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
-                    </div>
-                    <span class="bike-name">X-front snowmobile</span>
-                    <span class="bike-description">24", сталь, Китай</span>
-                    <span class="bike-price">42 000 &#8381;</span>
-                  </div>
-                  <div class="bike-slide">
-                    <div class="bike-img-border">
-                      <img src="img/bikes/bike_6.png" alt="bike" width="283" height="146">
-                      <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
-                    </div>
-                    <span class="bike-name">2fast4you chopper</span>
-                    <span class="bike-description">24", сталь, Венгрия</span>
-                    <span class="bike-price">38 000 &#8381;</span>
-                  </div>
-                  <div class="bike-slide">
-                    <div class="bike-img-border">
-                      <img src="img/bikes/bike_7.png" alt="bike" width="275" height="152">
-                      <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
-                    </div>
-                    <span class="bike-name">schwinn stingray occ</span>
-                    <span class="bike-description">20"+24", сталь, США</span>
-                    <span class="bike-price">34 000 &#8381;</span>
-                  </div>
-                  <div class="bike-slide">
-                    <div class="bike-img-border">
-                      <img src="img/bikes/bike_8.png" alt="bike" width="265" height="159">
-                      <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
-                    </div>
-                    <span class="bike-name">harley davidson</span>
-                    <span class="bike-description">20", сталь, Китай</span>
-                    <span class="bike-price">23 000 &#8381;</span>
-                  </div>
-                  <div class="bike-slide">
-                    <div class="bike-img-border">
-                      <img src="img/bikes/bike_9.png" alt="bike" width="274" height="170">
-                      <a class="bike-btn-add-to-cart" href="#">Добавить в корзину</a>
-                    </div>
-                    <span class="bike-name">micargi cyclone electric</span>
-                    <span class="bike-description">26", 500W, 5 скоростей, сталь, США</span>
-                    <span class="bike-price">154 000 &#8381;</span>
-                  </div>
-        </div>
-      <a class="btn bikes__slider-button-next" id="next"></a>
+    <div class="bike__slider">
+      <div class="slider">
+          <div class="container-prev">
+            <a class="slider-button-prev" href="#"></a>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/bikes/bike_1.png" alt="bike" width="319" height="147">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">Micargi cyclone electric</span>
+            <span class="description">26", 500W, 5 скоростей, сталь, США</span>
+            <span class="price">154 000 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/bikes/bike_2.png" alt="bike" width="283" height="131">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">Neuzer chopper apocalypse</span>
+            <span class="description">24", сталь Hi-Ten, Венгрия</span>
+            <span class="price">75 000 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/bikes/bike_3.png" alt="bike" width="262" height="128">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">Schwinn stingray occ</span>
+            <span class="description">20"+24", сталь, США</span>
+            <span class="price">34 000 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/bikes/bike_4.png" alt="bike" width="266" height="166">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">Harley Davidson</span>
+            <span class="description">20", сталь, Китай</span>
+            <span class="price">23 000 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/bikes/bike_5.png" alt="bike" width="286" height="178">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">X-front snowmobile</span>
+            <span class="description">24", сталь, Китай</span>
+            <span class="price">42 000 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/bikes/bike_6.png" alt="bike" width="283" height="146">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">2fast4you chopper</span>
+            <span class="description">24", сталь, Венгрия</span>
+            <span class="price">38 000 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/bikes/bike_7.png" alt="bike" width="275" height="152">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">schwinn stingray occ</span>
+            <span class="description">20"+24", сталь, США</span>
+            <span class="price">34 000 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/bikes/bike_8.png" alt="bike" width="265" height="159">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">harley davidson</span>
+            <span class="description">20", сталь, Китай</span>
+            <span class="price">23 000 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/bikes/bike_9.png" alt="bike" width="274" height="170">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">micargi cyclone electric</span>
+            <span class="description">26", 500W, 5 скоростей, сталь, США</span>
+            <span class="price">154 000 &#8381;</span>
+          </div>
+          <div class="container-next">
+            <a class="slider-button-next" href="#"></a>
+          </div>
+      </div>
     </div>
 
     <a class="bikes__btn" href="catalogue.html">Все велосипеды</a>
   </div>
 </div>
 
-<script>
-  (function (){
-    var doc = document;
-    var index = 1;
-
-    var Slider = function () {
-      this.box = doc.querySelector('.bike-slide');
-      this.slidesBox = doc.querySelector('.bikes__carousel');
-      this.slides = doc.querySelectorAll('.bike-slide');
-      this.btns = doc.querySelectorAll('.btn');
-      this.size = this.box.clientWidth + 45;
-
-      this.carousel();
-    };
-
-    Slider.prototype.carousel = function () {
-      var i;
-      var max = this.btns.length;
-      var that = this;
-
-      for (i = 0; i < max; i += 1){
-        that.btns[i].addEventListener('click', Slider[that.btns[i].id].bind(null, that));
-      }
-    };
-
-    Slider.prev = function (box) {
-      //box.slidesBox.style.transform = "transform .3s ease-in-out";
-      var max = box.slides.length;
-      var size = box.size;
-      index <= 0 ? false : index--;
-      box.slidesBox.style.transform = 'translateX('+ (-index * size)+'px)';
-    };
-
-    Slider.next = function (box) {
-      //box.slidesBox.style.transform = "transform .3s ease-in-out";
-      var max = box.slides.length;
-      var size = box.size;
-      index >= max-1 ? false : index++;
-      box.slidesBox.style.transform = 'translateX('+ (-index * size)+'px)';
-    };
-
-    new Slider();
-  })();
-
-</script>
-
 <div class="service">
   <div class="service__container">
-      <div class="service__picture">
-        <img src="img/rectangle_4.png" alt="picture" width="461" height="356">
-      </div>
       <div class="service__text-block">
         <h2>Мастерская</h2>
         <p>Наши мастера всегда готовы привести в чувство вашего коня, кастомизировать любую модель или просто помочь советом.
@@ -215,62 +167,68 @@
         Если вы чего-то не нашли в наличии, наши консультанты помогут заказать и доставить товар из любой точки мира.</p>
     </div>
     <div class="accessories__slider">
-      <a class="accessories__slider-button-prev" href="#"></a>
-      <div class="accessory-slide">
-        <div class="accessory-img-border">
-          <img src="img/accessories/acc_4.png" alt="accessory" width="197" height="143">
-          <a class="accessory-btn-add-to-cart" href="#">Добавить в корзину</a>
+        <div class="slider">
+          <div class="container-prev">
+            <a class="slider-button-prev" href="#"></a>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/accessories/acc_4.png" alt="accessory" width="197" height="143">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">Седло Brooks B66S</span>
+            <span class="description">натуральная кожа доступно в 3 цветах</span>
+            <span class="price">8625 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/accessories/acc_2.png" alt="accessory" width="196" height="89">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">Сумка на руль B-soul</span>
+            <span class="description">15x10x5 cm натуральная кожа</span>
+            <span class="price">3200 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/accessories/acc_3.png" alt="accessory" width="167" height="93">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">Грипсы Propalm</span>
+            <span class="description">натуральная кожа с фиксаторами</span>
+            <span class="price">1800 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/accessories/acc_4.png" alt="accessory" width="197" height="143">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">Седло Brooks B66S</span>
+            <span class="description">натуральная кожа доступно в 3 цветах</span>
+            <span class="price">8625 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/accessories/acc_5.png" alt="accessory" width="215" height="155">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">Колеса Strida 18"</span>
+            <span class="description">покрышка Innova цена за 2 колеса</span>
+            <span class="price">6780 &#8381;</span>
+          </div>
+          <div class="slide">
+            <div class="img-border">
+              <img src="img/accessories/acc_4.png" alt="accessory" width="197" height="143">
+              <a class="btn-add-to-cart" href="#">Добавить в корзину</a>
+            </div>
+            <span class="name">Седло Brooks B66S</span>
+            <span class="description">натуральная кожа доступно в 3 цветах</span>
+            <span class="price">8625 &#8381;</span>
+          </div>
+          <div class="container-next">
+            <a class="slider-button-next" href="#"></a>
+          </div>
         </div>
-        <span class="accessory-name">X</span>
-        <span class="accessory-description">X</span>
-        <span class="accessory-price">X &#8381;</span>
-      </div>
-      <div class="accessory-slide">
-        <div class="accessory-img-border">
-          <img src="img/accessories/acc_2.png" alt="accessory" width="196" height="89">
-          <a class="accessory-btn-add-to-cart" href="#">Добавить в корзину</a>
-        </div>
-        <span class="accessory-name">Сумка на руль B-soul</span>
-        <span class="accessory-description">15x10x5 cm натуральная кожа</span>
-        <span class="accessory-price">3200 &#8381;</span>
-      </div>
-      <div class="accessory-slide">
-        <div class="accessory-img-border">
-          <img src="img/accessories/acc_3.png" alt="accessory" width="167" height="93">
-          <a class="accessory-btn-add-to-cart" href="#">Добавить в корзину</a>
-        </div>
-        <span class="accessory-name">Грипсы Propalm</span>
-        <span class="accessory-description">натуральная кожа с фиксаторами</span>
-        <span class="accessory-price">1800 &#8381;</span>
-      </div>
-      <div class="accessory-slide">
-        <div class="accessory-img-border">
-          <img src="img/accessories/acc_4.png" alt="accessory" width="197" height="143">
-          <a class="accessory-btn-add-to-cart" href="#">Добавить в корзину</a>
-        </div>
-        <span class="accessory-name">Седло Brooks B66S</span>
-        <span class="accessory-description">натуральная кожа доступно в 3 цветах</span>
-        <span class="accessory-price">8625 &#8381;</span>
-      </div>
-      <div class="accessory-slide">
-        <div class="accessory-img-border">
-          <img src="img/accessories/acc_5.png" alt="accessory" width="215" height="155">
-          <a class="accessory-btn-add-to-cart" href="#">Добавить в корзину</a>
-        </div>
-        <span class="accessory-name">Колеса Strida 18"</span>
-        <span class="accessory-description">покрышка Innova цена за 2 колеса</span>
-        <span class="accessory-price">6780 &#8381;</span>
-      </div>
-      <div class="accessory-slide">
-        <div class="accessory-img-border">
-          <img src="img/accessories/acc_4.png" alt="accessory" width="197" height="143">
-          <a class="accessory-btn-add-to-cart" href="#">Добавить в корзину</a>
-        </div>
-        <span class="accessory-name">X</span>
-        <span class="accessory-description">X</span>
-        <span class="accessory-price">X &#8381;</span>
-      </div>
-      <a class="accessories__slider-button-next" href="#"></a>
     </div>
     <a class="accessories__btn" href="card.html">Перейти в каталог</a>
   </div>
@@ -284,9 +242,6 @@
       <p>Регистрируйся и получай специальные привелегии, приглашения на закрытые мероприятия, специальные цены в нашем
         магазине и много других плюшек.</p>
       <a class="bike-club__btn" href="#">Вступить</a>
-    </div>
-    <div class="bike-club__picture">
-      <img src="img/image.png" alt="picture" width="526" height="357">
     </div>
   </div>
 
@@ -309,11 +264,9 @@
         <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
         <li><a class="social-btn social-btn-in" href="#">Инстаграм</a></li>
       </ul>
-      <div class="footer__logo">
-        <a href="#">
-          <img src="img/logo.png" alt="Bikeshop Chopper" width="184" height="30">
-        </a>
-      </div>
+      <a class="footer__logo" href="#">
+        <img src="img/logo.png" alt="Bikeshop Chopper" width="184" height="30">
+      </a>
       <div class="footer__copyright">
         <p>©2018 | Политика конфиденциальности</p>
       </div>
