@@ -258,6 +258,13 @@
         .bike-price {
           color: #ba4f4f;
         }
+        .dash {
+          font-weight: bolder;
+          color: #ba4f4f;
+          position: relative;
+          left: -16px;
+          top: 4px;
+        }
 
         .bike-description {
           @extend %zero_padd_marg;

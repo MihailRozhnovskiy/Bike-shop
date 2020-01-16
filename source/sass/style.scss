@@ -104,7 +104,6 @@ body {
 .bikes,
 .accessories {
   padding: 80px 0;
-
   .bikes__content,
   .accessories__content {
     display: flex;
@@ -142,7 +141,6 @@ body {
     letter-spacing: 0.04em;
     color: #817155;
   }
-
   .accessories__text-block p {
     width: 800px;
   }
@@ -151,18 +149,40 @@ body {
       @import "slider";
       margin-bottom: 70px;
   }
-
+  .accessories__slider .slide {
+    width: 270px;
+    margin-right: 0;
+    transform: translateX(-130px);
+  }
+  .line-left,
+  .line-right {
+    @extend %zero_padd_marg;
+    height: 0;
+    border: none;
+    width: 415px;
+    border-top: 1px solid #9b8869;
+    position: relative;
+  }
+  .line-left {
+    right: 350px;
+    top: 34px;
+  }
+  .line-right {
+    left: 350px;
+    bottom: 34px;
+  }
   .bikes__btn,
   .accessories__btn {
     @extend %buttons;
     width: 275px;
+    border-color: #9b8869;
+    color: #817155;
   }
 }
 
 .service {
   background: url("../img/back.png") no-repeat center;
   background-size: cover;
-
   .service__container {
     display: flex;
     justify-content: flex-end;
@@ -172,7 +192,6 @@ body {
     background: url("../img/rectangle_4.png") no-repeat 0 123px;
     background-size: auto auto;
   }
-
   .service__text-block {
     @extend %zero_padd_marg;
     width: 500px;

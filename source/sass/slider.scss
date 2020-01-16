@@ -10,7 +10,7 @@
 
 .container-prev,
 .container-next {
-  width: 142px;
+  width: 160px;
   height: 423px;
   position: absolute;
   background-color: #e9e1d5;
@@ -19,7 +19,7 @@
 }
 
 .container-next {
-  left: 1207px;
+  left: 1190px;
 }
 
 .slider-button-prev,
@@ -34,12 +34,12 @@
 }
 
 .slider-button-prev {
-  left: 50px;
+  left: 55px;
   background-position: -15px -154px;
 }
 
 .slider-button-next {
-  left: 75px;
+  left: 85px;
   background-position: -68px -154px;
 }
 
@@ -52,6 +52,7 @@
   height: 423px;
   margin-right: 45px;
   background-color: #e9e1d5;
+  transform: translateX(-125px);
 }
 .name,
 .price {
@@ -67,9 +68,18 @@
   color: #ba4f4f;
 }
 
+.dash {
+  font-weight: bolder;
+  color: #ba4f4f;
+  position: relative;
+  left: -12px;
+  top: 4px;
+}
+
 .description {
   @extend %zero_padd_marg;
   font-family: "RobotoRegular", sans-serif;
+  width: 232px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;

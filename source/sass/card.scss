@@ -53,6 +53,7 @@
       margin-right: 60px;
       //border: 1px solid red;
 
+
       .card-product-img-border {
         display: flex;
         flex-direction: column;
@@ -170,6 +171,13 @@
         text-transform: uppercase;
         color: #ba4f4f;
         margin-bottom: 18px;
+      }
+      .dash {
+        font-weight: bolder;
+        color: #ba4f4f;
+        position: relative;
+        left: -32px;
+        top: 10px;
       }
       p {
         @extend %zero_padd_marg;
@@ -298,6 +306,11 @@
     margin-bottom: 80px;
   }
 @import "slider";
+  .slide {
+    width: 270px;
+    margin-right: 0;
+    transform: translateX(-130px);
+  }
 }
 
 .card-footer {
