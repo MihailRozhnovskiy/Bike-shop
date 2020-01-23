@@ -8,12 +8,13 @@
   width: 1250px;
   padding: 40px 0;
   margin: 0 auto;
+  position: relative;
   .header__logo {
     display: block;
     width: 184px;
     height: 30px;
   }
-  .main-menu ul {
+  .menu ul {
     @extend %zero_padd_marg;
     display: flex;
     list-style: none;
@@ -25,7 +26,7 @@
       letter-spacing: 0.04em;
       text-transform: none;
     }
-    li.main {
+    li.menu__item {
       text-transform: uppercase;
     }
     li:last-child {
@@ -35,7 +36,7 @@
       color: #9b8869;
       text-decoration: none;
     }
-    a.active {
+    .menu__link-active {
       color: #ba4f4f;
     }
   }
@@ -50,7 +51,7 @@
       margin-right: 0;
     }
   }
-  .user-btn {
+  .user-nav__btn {
     @extend %sprite;
   }
   .user-btn-us {
@@ -64,5 +65,23 @@
   }
   .user-btn-h {
     background-position: -19px -214px;
+  }
+  .quantity-basket,
+  .quantity-hamburger {
+    @extend %zero_padd_marg;
+    position: absolute;
+    top: 60%;
+    left: 95.2%;
+    font-family: "RobotoRegular", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #ba4f4f;
+  }
+  .quantity-hamburger {
+    left: 98.3%;
   }
 }

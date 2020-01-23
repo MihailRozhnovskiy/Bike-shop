@@ -13,10 +13,10 @@
     <a class="header__logo" href="index.html">
       <img src="img/logo.png" alt="Bikeshop Chopper" width="184" height="30">
     </a>
-    <nav class="main-menu">
-      <ul>
+    <nav class="menu">
+      <ul class="menu__items">
         <li><a href="catalogue.html">Велосипеды</a></li>
-        <li><a class="active" href="card.html">Аксессуары</a></li>
+        <li><a class="menu__link-active" href="card.html">Аксессуары</a></li>
         <li><a href="#">Запчасти</a></li>
         <li><a href="#">Мастерская</a></li>
         <li><a href="#">Доставка и оплата</a></li>
@@ -24,23 +24,29 @@
       </ul>
     </nav>
     <ul class="user-nav">
-      <li><a class="user-btn user-btn-us" href="#">Пользователи</a></li>
-      <li><a class="user-btn user-btn-s" href="#">Поиск</a></li>
-      <li><a class="user-btn user-btn-b" href="#">Корзина</a></li>
-      <li><a class="user-btn user-btn-h" href="#">Гамбургер</a></li>
+      <li><a class="user-nav__btn user-btn-us" href="#">Пользователи</a></li>
+      <li><a class="user-nav__btn user-btn-s" href="#">Поиск</a></li>
+      <li><a class="user-nav__btn user-btn-b" href="#">Корзина</a></li>
+      <li><a class="user-nav__btn user-btn-h" href="#">Гамбургер</a></li>
     </ul>
+    <span class="quantity-basket">1</span>
+    <span class="quantity-hamburger">3</span>
   </header>
 </div>
 
 <div class="card-product-route">
-  <span class="product__route">Аксессуары / Седла / Brooks</span>
+  <ul class="breadcrumb">
+    <li><a href="#">Аксессуары</a></li>
+    <li><a href="#">Седла</a></li>
+    <li class="breadcrumb__active">Brooks</li>
+  </ul>
 </div>
 
 <div class="card-product">
     <div class="card-product__container">
       <div class="card-product__picture">
           <div class="card-product-img-border">
-            <img src="img/accessories_card/Brooks_B67_1.png" alt="picture" width="518" height="376">
+            <img src="img/accessories_card/Brooks_B67_1.png" alt="picture" width="436" height="376">
             <a class="card-product-btn-zoom" href="#">Увеличить</a>
           </div>
         <div class="card-product-paginator">
@@ -172,8 +178,8 @@
 
 <div class="card-footer">
   <footer class="footer">
-    <nav class="footer__main-menu">
-      <ul>
+    <nav class="footer-menu">
+      <ul class="footer-menu__items">
         <li><a href="catalogue.html">Велосипеды</a></li>
         <li><a href="card.html">Аксессуары</a></li>
         <li><a href="#">Запчасти</a></li>
@@ -184,11 +190,11 @@
         <li><a href="#">Вступление в клуб</a></li>
       </ul>
     </nav>
-    <div class="footer__bottom">
-      <ul class="footer__social">
-        <li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
-        <li><a class="social-btn social-btn-fb" href="#">Фейсбук</a></li>
-        <li><a class="social-btn social-btn-in" href="#">Инстаграм</a></li>
+    <div class="footer-bottom">
+      <ul class="social__btns">
+        <li><a class="social__btn social-btn-vk" href="#">Вконтакте</a></li>
+        <li><a class="social__btn social-btn-fb" href="#">Фейсбук</a></li>
+        <li><a class="social__btn social-btn-in" href="#">Инстаграм</a></li>
       </ul>
       <a class="footer__logo" href="index.html">
         <img src="img/logo.png" alt="Bikeshop Chopper" width="184" height="30">

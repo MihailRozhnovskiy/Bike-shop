@@ -1,6 +1,6 @@
 %card_buttons {
   display: inline-block;
-  width: 273px;
+  width: 272px;
   padding: 20px;
   font: inherit;
   vertical-align: top;
@@ -17,280 +17,285 @@
   background-color: #ba4f4f;
 }
 
-
 .card-header {
   @import "header";
   border-bottom: 1px solid #9b8869;
 }
 
 .card-product-route {
-  padding: 40px 0 60px 122px;
-  .product__route {
+  width: 1090px;
+  margin: 0 auto;
+  padding: 40px 0;
+  .breadcrumb {
+    @extend %zero_padd_marg;
+    display: flex;
+    list-style: none;
+    padding: 0 40px;
+  }
+  li {
     font-family: "RobotoRegular", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
+    color: #9b8869;
+  }
+  a {
+    color: #9b8869;
+    text-decoration: none;
+  }
+  a:after {
+    content: " / ";
+    margin-right: 5px;
   }
 }
 
 .card-product {
-  max-height: 530px;
-  padding: 0 110px 80px 45px;
-
+  width: 1090px;
+  margin: 0 auto;
+  padding: 20px 0;
   .card-product__container {
     display: flex;
     justify-content: flex-start;
-
-    .card-product__picture {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      width: 518px;
-      height: 450px;
-      background-color: #e9e1d5;
-      margin-right: 60px;
-      //border: 1px solid red;
-
-
-      .card-product-img-border {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        width: 353px;
-        height: 425px;
-        border: 6px solid #f0ede8;
-        font-size: 0;
-
-        .card-product-btn-zoom {
-          position: relative;
-          top: 30px;
-          @extend %sprite;
-          width: 50px;
-          height: 50px;
-          background-color: #9b8869;;
-          background-position: -48px -250px;
-        }
-        img {
-          width: 518px;
-          height: 376px;
-          mix-blend-mode: multiply;
-        }
-      }
+  }
+  .card-product__picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 436px;
+    height: 450px;
+    background-color: #e9e1d5;
+    margin-right: 60px;
+  }
+  .card-product-img-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 353px;
+    height: 425px;
+    border: 6px solid #f0ede8;
+    font-size: 0;
+  }
+  .card-product-btn-zoom {
+    position: relative;
+    top: 30px;
+    @extend %sprite;
+    width: 50px;
+    height: 50px;
+    background-color: #9b8869;;
+    background-position: -48px -250px;
+  }
+  img {
+    width: 436px;
+    height: 376px;
+    mix-blend-mode: multiply;
+  }
+  .card-product-paginator {
+    position: relative;
+    top: -75px;
+  }
+  .card-product-paginator input[type="radio"] {
+    display: none;
+  }
+  .paginator-controls {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .paginator-controls label {
+    display: inline-block;
+    margin: 0 5px;
+    width: 18px;
+    height: 18px;
+    border: 4px solid #e9e1d5;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  #btn-1 ~ .paginator-controls label[for="btn-1"] {
+    background-color: #333232;
+  }
+  #btn-2 ~ .paginator-controls label[for="btn-2"] {
+    background-color: #7e5b48;
+  }
+  #btn-3 ~ .paginator-controls label[for="btn-3"] {
+    background-color: #d5b688;
+  }
+  #btn-1:checked ~ .paginator-controls label[for="btn-1"],
+  #btn-2:checked ~ .paginator-controls label[for="btn-2"],
+  #btn-3:checked ~ .paginator-controls label[for="btn-3"] {
+    box-shadow: 0 0 0 2px #9b8869;
+  }
+  .card-product__text-block {
+    @extend %zero_padd_marg;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  h2 {
+    @extend %zero_padd_marg;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 48px;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #817155;
+    margin-bottom: 10px;
+  }
+  .product-rating,
+  .product-warranty {
+    font-family: "RobotoRegular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: #9b8869;
+  }
+  .product-rating {
+    margin-bottom: 28px;
+    .active-star,
+    .star {
+      @extend %sprite;
+      width: 24px;
+      height: 24px;
+      background-position: -112px -209px;
+      vertical-align: bottom;
     }
-
-    .card-product-paginator {
-      position: relative;
-      top: -75px;
+    .star {
+      background-position: -13px -259px;
     }
-    .card-product-paginator input[type="radio"] {
-      display: none;
-    }
-    .paginator-controls {
-      margin-bottom: 10px;
-      text-align: center;
-    }
-    .paginator-controls label {
-      display: inline-block;
-      margin: 0 5px;
-      width: 18px;
-      height: 18px;
-      border: 4px solid #e9e1d5;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: background-color 0.2s;
-    }
-    #btn-1 ~ .paginator-controls label[for="btn-1"] {
-      background-color: #333232;
-    }
-    #btn-2 ~ .paginator-controls label[for="btn-2"] {
-      background-color: #7e5b48;
-    }
-    #btn-3 ~ .paginator-controls label[for="btn-3"] {
-      background-color: #d5b688;
-    }
-
-    #btn-1:checked ~ .paginator-controls label[for="btn-1"],
-    #btn-2:checked ~ .paginator-controls label[for="btn-2"],
-    #btn-3:checked ~ .paginator-controls label[for="btn-3"] {
-      box-shadow: 0 0 0 2px #9b8869;
-    }
-
-    .card-product__text-block {
-      @extend %zero_padd_marg;
-      width: 500px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      h2 {
-        @extend %zero_padd_marg;
-        font-size: 48px;
-        font-weight: normal;
-        line-height: 48px;
-        vertical-align: top;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-        color: #817155;
-        margin-bottom: 10px;
-      }
-      .product-rating,
-      .product-warranty {
-        font-family: "RobotoRegular", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 22px;
-        line-height: 22px;
-        letter-spacing: 0.2px;
-        color: #9b8869;
-      }
-      .product-rating {
-        margin-bottom: 28px;
-        .active-star,
-        .star {
-          @extend %sprite;
-          width: 24px;
-          height: 24px;
-          background-position: -112px -209px;
-          vertical-align: bottom;
-        }
-        .star {
-          background-position: -13px -259px;
-        }
-      }
-      .product-warranty {
-        font-size: 14px;
-        line-height: 18px;
-        color: #ba4f4f;
-        margin-bottom: 43px;
-      }
-      .product-price {
-        font-size: 48px;
-        line-height: 48px;
-        text-transform: uppercase;
-        color: #ba4f4f;
-        margin-bottom: 18px;
-      }
-      .dash {
-        font-weight: bolder;
-        color: #ba4f4f;
-        position: relative;
-        left: -32px;
-        top: 10px;
-      }
-      p {
-        @extend %zero_padd_marg;
-        font-family: "RobotoRegular", sans-serif;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: lighter;
-        line-height: 30px;
-        text-transform: none;
-        letter-spacing: 0.04em;
-        color: #817155;
-        margin-bottom: 10px;
-      }
-
-      .card-product__btn {
-        @extend %card_buttons;
-      }
-      .card-product__btn:before {
-        content: "";
-        @extend %sprite;
-        width: 22px;
-        height: 19px;
-        background-position: -109px -164px;
-        margin-right: 10px;
-      }
-    }
+  }
+  .product-warranty {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ba4f4f;
+    margin-bottom: 43px;
+  }
+  .product-price {
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #ba4f4f;
+    margin-bottom: 18px;
+  }
+  .dash {
+    font-weight: bolder;
+    color: #ba4f4f;
+    position: relative;
+    left: -32px;
+    top: 10px;
+  }
+  p {
+    @extend %zero_padd_marg;
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 30px;
+    text-transform: none;
+    letter-spacing: 0.04em;
+    color: #817155;
+    margin-bottom: 10px;
+  }
+  .card-product__btn {
+    @extend %card_buttons;
+  }
+  .card-product__btn:before {
+    content: "";
+    @extend %sprite;
+    width: 22px;
+    height: 19px;
+    background-position: -109px -164px;
+    margin-right: 10px;
   }
 }
 
 .card-details {
-  padding: 0 134px 80px 123px;
+  width: 1090px;
+  margin: 0 auto;
+  padding: 60px 0;
   .card-details__nav {
     @extend %zero_padd_marg;
     display: flex;
     list-style: none;
-
-    .card-details__btn {
-      @extend %card_buttons;
-      padding: 17px 10px;
-      background-color: inherit;
-      color: #cbc1b1;
-      border-top: 1px solid #cbc1b1;
-      border-right: 1px solid #cbc1b1;
-      border-left: 1px solid #cbc1b1;
-    }
-
-    .active {
-      border: 1px solid #9b8869;
-      border-bottom: none;
-      color: #9b8869;
-    }
   }
-
+  .card-details__btn {
+    @extend %card_buttons;
+    padding: 17px 10px;
+    background-color: inherit;
+    color: #cbc1b1;
+    border-top: 1px solid #cbc1b1;
+    border-right: 1px solid #cbc1b1;
+    border-left: 1px solid #cbc1b1;
+    box-sizing: border-box;
+  }
+  .active {
+    border: 1px solid #9b8869;
+    border-bottom: none;
+    box-sizing: border-box;
+    color: #9b8869;
+  }
   .card-details__reviews {
-    width: 990px;
-    max-height: 330px;
+    width: 986px;
     border: 1px solid #9b8869;
     border-top: none;
     padding: 50px;
     display: flex;
     flex-direction: column;
-
-    .review-author {
-      font-family: "RobotoRegular", sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 18px;
-      color: #9b8869;
-      margin-bottom: 10px;
+  }
+  .review-author {
+    font-family: "RobotoRegular", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #9b8869;
+    margin-bottom: 10px;
+  }
+  .review-rating {
+    .rev-star {
+      @extend %sprite;
+      width: 17px;
+      height: 17px;
+      background-position: -114px -264px;
+      margin-bottom: 25px;
     }
-
-    .review-rating {
-      .rev-star {
-        @extend %sprite;
-        width: 17px;
-        height: 17px;
-        background-position: -114px -264px;
-        margin-bottom: 25px;
-      }
-    }
-    h2 {
-      @extend %zero_padd_marg;
-      font-size: 24px;
-      font-weight: 300;
-      line-height: 24px;
-      text-transform: uppercase;
-      color: #817155;
-      margin-bottom: 10px;
-    }
-    p {
-      @extend %zero_padd_marg;
-      font-family: "RobotoRegular", sans-serif;
-      font-style: normal;
-      font-weight: 200;
-      font-size: 22px;
-      line-height: 22px;
-      align-items: center;
-      letter-spacing: 0.2px;
-      color: #817155;
-      margin-bottom: 40px;
-    }
-    .card-review__btn {
-      @extend %card_buttons;
-      padding: 17px 10px;
-      background-color: inherit;
-      color: #817155;
-    }
+  }
+  h2 {
+    @extend %zero_padd_marg;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #817155;
+    margin-bottom: 10px;
+  }
+  p {
+    @extend %zero_padd_marg;
+    font-family: "RobotoRegular", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 22px;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #817155;
+    margin-bottom: 40px;
+  }
+  .card-review__btn {
+    @extend %card_buttons;
+    padding: 17px 10px;
+    background-color: inherit;
+    color: #817155;
   }
 }
 
 .card-other {
-  padding-bottom: 80px;
+  padding: 20px 0;
   .card-other__container {
     display: flex;
     flex-direction: column;
@@ -314,5 +319,6 @@
 }
 
 .card-footer {
+  padding-top: 60px;
  @import "footer";
 }

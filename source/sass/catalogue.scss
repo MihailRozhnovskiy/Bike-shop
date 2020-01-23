@@ -4,8 +4,9 @@
  }
 
 .filter-manag-container {
-  padding: 0 50px 45px 50px;
-
+  width: 1250px;
+  margin: 0 auto;
+  padding-bottom: 25px;
   .filter-management {
     @extend %zero_padd_marg;
     display: flex;
@@ -14,303 +15,367 @@
     border-top: 1px solid #baa480;
     border-bottom: 1px solid #baa480;
     padding: 22px 0;
-    .filter-management__left {
-      .filter-reset {
-        margin-right: 170px;
-        font-size: 18px;
-        line-height: 18px;
-        letter-spacing: 0.04em;
-        color: #ba4f4f;
-        cursor: pointer;
-      }
-      select {
-        @extend %zero_padd_marg;
-        appearance: none;
-        border: 0 none;
-        font-family: "HaginCapsMedium", sans-serif;
-        background-color: inherit;
-        font-size: 18px;
-        line-height: 18px;
-        letter-spacing: 0.04em;
-        color: #9B8869;
-        cursor: pointer;
+  }
+  .filter-reset {
+    margin-right: 170px;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: #ba4f4f;
+    cursor: pointer;
+  }
+  select {
+    @extend %zero_padd_marg;
+    appearance: none;
+    border: 0 none;
+    font-family: "HaginCapsMedium", sans-serif;
+    background-color: inherit;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: #9B8869;
+    cursor: pointer;
+  }
+  .filter-management__right {
+    display: flex;
+  }
+  .text {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    color: #9b8869;
+    margin-right: 10px;
+  }
+  ul {
+    @extend %zero_padd_marg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  .filter-show,
+  .filter-union {
+    margin-right: 40px;
+    li {
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 0.04em;
+      text-transform: none;
+      padding-right: 10px;
+      margin-right: 10px;
+      border-right: 1px solid #baa480;
+    }
+    li:last-child {
+      padding-right: 0;
+      margin-right: 0;
+      border-right: none;
+    }
+    a {
+      color: #9b8869;
+      text-decoration: none;
+    }
+    .active {
+      color: #ba4f4f;
+    }
+  }
+
+  .filter-union {
+    margin-right: 0;
+    li {
+      border-right: none;
+      padding-right: 0;
+    }
+    li:first-child {
+      background-color: #ba4f4f;
+      a {
+        color: #e9e1d5;
+        text-align: center;
+        vertical-align: middle;
       }
     }
-    .filter-management__right {
-      display: flex;
-      .text {
-        font-size: 18px;
-        line-height: 18px;
-        letter-spacing: 0.04em;
-        text-transform: none;
-        color: #9b8869;
-        margin-right: 10px;
-      }
-      ul {
-        @extend %zero_padd_marg;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-      }
-      .filter-show,
-      .filter-union {
-        margin-right: 40px;
-        li {
-          font-size: 18px;
-          line-height: 18px;
-          letter-spacing: 0.04em;
-          text-transform: none;
-          padding-right: 10px;
-          margin-right: 10px;
-          border-right: 1px solid #baa480;
-        }
-        li:last-child {
-          padding-right: 0;
-          margin-right: 0;
-          border-right: none;
-        }
-        li:first-child {
-          a {
-            color: #ba4f4f;
-          }
-        }
-        a {
-          color: #9b8869;
-          text-decoration: none;
-        }
-      }
-
-      .filter-union {
-        margin-right: 0;
-        li {
-          border-right: none;
-          padding-right: 0;
-        }
-        li:first-child {
-          background-color: #ba4f4f;
-          a {
-            color: #e9e1d5;
-          }
-        }
-
-      }
-    }
-
   }
 }
 
 .filter-container {
   display: flex;
   justify-content: flex-start;
-  padding: 0 53px 50px 53px;
-
+  width: 1250px;
+  margin: 0 auto;
+  padding: 25px 0;
   .filter-form {
     width: 182px;
-    margin-right: 58px;
+  }
+  .filter-form__price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  input[type="number"] {
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #9b8869;
+    background-color: inherit;
+    font-family: "RobotoRegular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .filter-scale {
+    @extend %zero_padd_marg;
+    margin: 20px 0;
+    height: 0;
+    border: none;
+    width: 182px;
+    border-top: 1px solid #9b8869;
+  }
+  .filter-scale-indicator {
+    @extend %zero_padd_marg;
+    height: 0;
+    width: 90px;
+    border: 1px solid #817155;
+    position: relative;
+    top: -23px;
+    left: 20px;
+  }
+  .filter-point-l,
+  .filter-point-r {
+    @extend %zero_padd_marg;
+    width: 5px;
+    height: 5px;
+    background-color: #817155;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+  }
+  .filter-point-l {
+    top: -23px;
+    left: -115px;
+  }
+  .filter-point-r {
+    top: -23px;
+    left: -70px;
+  }
 
-    .filter-form__price {
+  .filter-part {
+    border-bottom: 1px solid #9b8869;
+    .filter-part__name {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      input[type="number"] {
-        width: 80px;
-        height: 30px;
-        padding: 5px;
-        box-sizing: border-box;
-        border: 1px solid #9b8869;
-        background-color: inherit;
-        font-family: "RobotoRegular", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 18px;
-      }
+      padding: 15px 0;
+      cursor: pointer;
     }
+    p {
+      @extend %zero_padd_marg;
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 0.04em;
 
-    .filter-form__electric-drive,
-    .filter-form__fabricator,
-    .filter-form__material,
-    .filter-form__color,
-    .filter-form__size,
-    .filter-form__wheels,
-    .filter-form__speed {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      border-bottom: 1px solid #9b8869;
-      padding-bottom: 15px;
-      p {
-        font-size: 18px;
-        line-height: 18px;
-        letter-spacing: 0.04em;
-      }
-      label {
-        font-family: "RobotoRegular", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 18px;
-      }
-      input[type="checkbox"]:checked,
-      input[type="checkbox"]:not(:checked),
-      input[type="radio"]:checked,
-      input[type="radio"]:not(:checked) {
-        position: absolute;
-        left: -9999px;
-      }
-      input[type="checkbox"]:checked + label,
-      input[type="checkbox"]:not(:checked) + label,
-      input[type="radio"]:checked + label,
-      input[type="radio"]:not(:checked) + label {
-        display: inline-block;
-        position: relative;
-        padding-left: 28px;
-        margin-bottom: 12px;
-        line-height: 20px;
-        cursor: pointer;
-      }
-      input[type="checkbox"]:checked + label:before,
-      input[type="checkbox"]:not(:checked) + label:before,
-      input[type="radio"]:checked + label:before,
-      input[type="radio"]:not(:checked) + label:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 16px;
-        height: 16px;
-        border: 1px solid #9b8869;
-        box-sizing: border-box;
-        background-color: inherit;
-      }
-      input[type="checkbox"]:checked + label:after,
-      input[type="checkbox"]:not(:checked) + label:after,
-      input[type="radio"]:checked + label:after,
-      input[type="radio"]:not(:checked) + label:after {
-        content: "";
-        position: absolute;
-        transition: all 0.2s ease;
-      }
-      input[type="checkbox"]:checked + label:after,
-      input[type="checkbox"]:not(:checked) + label:after {
-        left: 3px;
-        top: 2px;
-        width: 8px;
-        height: 4px;
-        border-radius: 1px;
-        border-left: 4px solid #9b8869;
-        border-bottom: 4px solid #9b8869;
-        transform: rotate(-45deg);
-      }
-      input[type="radio"]:checked + label:after,
-      input[type="radio"]:not(:checked) + label:after {
-        left: 4px;
-        top: 4px;
-        width: 8px;
-        height: 8px;
-        background-color: #9b8869;
-      }
-      input[type="checkbox"]:not(:checked) + label:after,
-      input[type="radio"]:not(:checked) + label:after {
-        opacity: 0;
-      }
-      input[type="checkbox"]:checked + label:after,
-      input[type="radio"]:checked + label:after {
-        opacity: 1;
-      }
     }
+    .plus {
+      background: #9B8869;
+      height: 18px;
+      width: 1px;
+      position: relative;
+      right: 9px;
+    }
+    .plus:after {
+      content: "";
+      height: 1px;
+      width: 18px;
+      background: #9B8869;
+      position: absolute;
+      left: -9px;
+      top: 9px;
+    }
+    .minus {
+      background: #9B8869;
+      height: 1px;
+      width: 18px;
+    }
+  }
 
-    .filter-form__speed {
-      border-bottom: none;
-    }
+  .filter-form .filter-part:last-child {
+    border-bottom: none;
+  }
+
+  .filter-form__electric-drive,
+  .filter-form__fabricator,
+  .filter-form__material,
+  .filter-form__color,
+  .filter-form__size,
+  .filter-form__wheels,
+  .filter-form__speed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  label {
+    font-family: "RobotoRegular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  input[type="checkbox"]:checked,
+  input[type="checkbox"]:not(:checked),
+  input[type="radio"]:checked,
+  input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  input[type="checkbox"]:checked + label,
+  input[type="checkbox"]:not(:checked) + label,
+  input[type="radio"]:checked + label,
+  input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+  input[type="checkbox"]:checked + label:before,
+  input[type="checkbox"]:not(:checked) + label:before,
+  input[type="radio"]:checked + label:before,
+  input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #9b8869;
+    box-sizing: border-box;
+     background-color: inherit;
+  }
+  input[type="checkbox"]:checked + label:after,
+  input[type="checkbox"]:not(:checked) + label:after,
+  input[type="radio"]:checked + label:after,
+  input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease;
+  }
+  input[type="checkbox"]:checked + label:after,
+  input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 2px;
+    width: 8px;
+    height: 4px;
+    border-radius: 1px;
+    border-left: 4px solid #9b8869;
+    border-bottom: 4px solid #9b8869;
+    transform: rotate(-45deg);
+  }
+  input[type="radio"]:checked + label:after,
+  input[type="radio"]:not(:checked) + label:after {
+    left: 4px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #9b8869;
+  }
+  input[type="checkbox"]:not(:checked) + label:after,
+  input[type="radio"]:not(:checked) + label:after {
+     opacity: 0;
+  }
+  input[type="checkbox"]:checked + label:after,
+  input[type="radio"]:checked + label:after {
+    opacity: 1;
+  }
+
+  .close {
+    display: none;
   }
 
   .catalogue-product {
     width: 966px;
-    //border: 1px solid red;
-
-    .catalogue-product__bikes {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-
-      .bike-slide {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 283px;
-        height: 423px;
-        margin: 0 13px 45px 13px;
-        background-color: #e9e1d5;
-        .bike-name,
-        .bike-price {
-          @extend %zero_padd_marg;
-          width: 232px;
-          font-size: 24px;
-          line-height: 30px;
-          text-align: center;
-          text-transform: uppercase;
-        }
-
-        .bike-price {
-          color: #ba4f4f;
-        }
-        .dash {
-          font-weight: bolder;
-          color: #ba4f4f;
-          position: relative;
-          left: -16px;
-          top: 4px;
-        }
-
-        .bike-description {
-          @extend %zero_padd_marg;
-          font-family: "RobotoRegular", sans-serif;
-          font-size: 14px;
-          line-height: 18px;
-          text-align: center;
-          letter-spacing: 0.2px;
-          color: #9b8869;
-        }
-
-        .bike-img-border {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          align-items: center;
-          width: 178px;
-          height: 240px;
-          border: 6px solid #f0ede8;
-          margin: 0 53px 45px 53px;
-          font-size: 0;
-
-          .bike-btn-add-to-cart {
-            position: relative;
-            top: 30px;
-            @extend %sprite;
-            width: 50px;
-            height: 50px;
-            background-color: #ba4f4f;
-            background-position: -99px -150px;
-          }
-          img {
-            mix-blend-mode: multiply;
-          }
-        }
-      }
-    }
+    padding: 0 58px;
+  }
+  .catalogue-product__bikes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .bike-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 283px;
+    height: 423px;
+    margin: 0 13px 45px 13px;
+    background-color: #e9e1d5;
+  }
+  .bike-name,
+  .bike-price {
+    @extend %zero_padd_marg;
+    width: 232px;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .bike-price {
+    color: #ba4f4f;
+  }
+  .dash {
+    font-weight: bolder;
+    color: #ba4f4f;
+    position: relative;
+    left: -12px;
+    top: 4px;
+  }
+  .bike-description {
+    @extend %zero_padd_marg;
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #9b8869;
+  }
+  .bike-img-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 178px;
+    height: 240px;
+    border: 6px solid #f0ede8;
+    margin: 0 53px 45px 53px;
+    font-size: 0;
+  }
+  .bike-btn-add-to-cart {
+    position: relative;
+    top: 30px;
+    @extend %sprite;
+    width: 50px;
+    height: 50px;
+    background-color: #ba4f4f;
+    background-position: -99px -150px;
+  }
+  img {
+    mix-blend-mode: multiply;
   }
 }
 
 .filter-paginator-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 80px;
-  .filter-paginator a {
+  width: 1073px;
+  margin: 0 auto;
+  padding: 25px 0;
+  .filter-paginator {
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
     text-decoration: none;
     font-size: 18px;
     line-height: 30px;
@@ -327,8 +392,23 @@
       margin: 0 15px;
     }
   }
+  .line-left,
+  .line-right {
+    @extend %zero_padd_marg;
+    height: 0;
+    border: none;
+    width: 475px;
+    border-top: 1px solid #9b8869;
+    position: relative;
+    top: 15px;
+  }
+  span {
+    position: relative;
+    top: 7px;
+  }
 }
 
 .catalogue-footer {
+  padding-top: 55px;
   @import "footer";
 }
